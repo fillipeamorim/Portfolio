@@ -1,0 +1,230 @@
+<!doctype html>
+<html class="Site no-js" lang="en">
+	<head prefix="og: http://ogp.me/ns#">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet">
+		
+		<style>
+			html { height: 100%; -webkit-box-sizing: border-box; box-sizing: border-box }
+			*, :before, :after { -webkit-box-sizing: inherit; box-sizing: inherit }
+			body, blockquote, dl, dd, h1, h2, h3, figure, p, pre, form, ol, ul { margin: 0; font: inherit; padding: 0 }
+			a { color: inherit; cursor: pointer; text-decoration: none }
+			strong, b { font-weight: 500 }
+			i, em { font-style: italic }
+			img { max-width: 100%; height: auto }
+			ol, ul { list-style: none }
+			abbr { cursor: help; text-decoration: none }
+			[tabindex="-1"]:focus { outline: none !important }
+			:disabled { color: inherit; opacity: .4; -webkit-text-fill-color: currentColor }
+			::-webkit-input-placeholder { color: inherit; opacity: .7 }
+			:-ms-input-placeholder { color: inherit; opacity: .7 }
+			::placeholder { color: inherit; opacity: .7 }
+			textarea { resize: vertical }
+			.Entry-link { display: block; -webkit-transition: opacity .3s, -webkit-transform .3s; transition: opacity .3s, -webkit-transform .3s; transition: transform .3s, opacity .3s; transition: transform .3s, opacity .3s, -webkit-transform .3s }
+			.Entry-link:hover { opacity: .7; -webkit-transform: translateX(3px); transform: translateX(3px) }
+			.Entry-title { font-size: 2em }
+			.Entry--excerpt { font-size: 1.5em }
+			.Entry--excerpt:not(:last-child) { margin-bottom: 60px }
+			@media(min-width:300px) {
+				.Entry--excerpt:not(:last-child) { margin-bottom: 7vw }
+			}
+			@media(min-width:800px) {
+				.Entry--excerpt:not(:last-child) { margin-bottom: 100px }
+			}
+			@media(min-width:1200px) {
+				.Entry--excerpt:not(:last-child) { margin-bottom: 160px }
+			}
+			@media(min-width:1600px) {
+				.Entry--excerpt:not(:last-child) { margin-bottom: 200px }
+			}
+			.Foot { background: #262B31; color: #f0f0f0; line-height: 2; padding: 100px 0px; }
+			@media(min-width:800px) {
+				.Foot { font-size: 1.3em }
+			}
+			@media(min-width:300px) {
+				.Foot-inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap }
+			}
+			.Foot-section { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto }
+			.Foot-section:not(:last-child) { margin-bottom: 7vw }
+			.Foot-section:last-child { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto }
+			@media(min-width:300px) {
+				.Foot-section:not(:last-child) { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; padding-right: 30px; margin-bottom: 7vw }
+				.Foot-section:last-child { -ms-flex-item-align: center; align-self: center }
+			}
+			@media(min-width:470px) {
+				.Foot-section:not(:last-child) { margin-bottom: 0 }
+			}
+			@media(min-width:600px) {
+				.Foot-section:not(:last-child) { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; padding-right: 60px }
+				.Foot-section:last-child { -webkit-box-flex: 1; -ms-flex: 1 0 auto; flex: 1 0 auto }
+			}
+			@media(min-width:800px) {
+				.Foot-section:not(:last-child) { -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto }
+			}
+			.Foot-title { font-weight: 500; color: #999; margin-bottom: 10px }
+			.Foot-link { display: block; margin-bottom: .4em }
+			.Head-logo { display: inline-block; vertical-align: middle; }
+			.Head-logoTitle { display: inline-block; }
+			.Head-navLink { float: right }
+			.Head-logo, .Head-navLink { padding: .8em 0; font-size: 1.2em }
+			@media(min-width:300px) {
+				.Head-logo, .Head-navLink { padding: 7vw 0 }
+			}
+			@media(min-width:600px) {
+				.Head-logo, .Head-navLink { padding: 3.5vw 0 }
+			}
+			@media(min-width:1200px) {
+				.Head-logo, .Head-navLink { padding: 1.5em 0; font-size: 1.5em }
+			}
+			.Head-logo:focus, .Head-logo:hover { opacity: .7; outline: none }
+			.Link-inner { position: relative; padding-bottom: 3px }
+			.Link-inner:after { content: ""; position: absolute; width: 100%; height: 1px; bottom: 0; left: 0; right: 0; margin: auto; background: currentColor; opacity: 0; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: opacity 50ms .15s, -webkit-transform .15s; transition: opacity 50ms .15s, -webkit-transform .15s; transition: transform .15s, opacity 50ms .15s; transition: transform .15s, opacity 50ms .15s, -webkit-transform .15s }
+			.Link:focus .Link-inner:after, .Link.is-active .Link-inner:after, .Link:hover .Link-inner:after { opacity: 1; -webkit-transform: scaleX(1); transform: scaleX(1); -webkit-transition: -webkit-transform .15s; transition: -webkit-transform .15s; transition: transform .15s; transition: transform .15s, -webkit-transform .15s }
+			.Link:focus { outline: none }
+			.Link.is-active .Link-inner:after { -webkit-transition: opacity 50ms .15s, -webkit-transform .15s ease .3s; transition: opacity 50ms .15s, -webkit-transform .15s ease .3s; transition: transform .15s ease .3s, opacity 50ms .15s; transition: transform .15s ease .3s, opacity 50ms .15s, -webkit-transform .15s ease .3s }
+			.Section { padding: 60px 0 }
+			@media(min-width:300px) {
+				.Section { padding: 7vw 0 }
+			}
+			@media(min-width:800px) {
+				.Section { padding: 100px 0 }
+			}
+			@media(min-width:1200px) {
+				.Section { padding: 80px 0 160px }
+			}
+			@media(min-width:1600px) {
+				.Section { padding: 200px 0 }
+			}
+			@media(min-width:800px) {
+				.Section--about { padding-top: 50px }
+			}
+			@media(min-width:1200px) {
+				.Section--about { padding-top: 80px }
+			}
+			@media(min-width:1600px) {
+				.Section--about { padding-top: 100px }
+			}
+			.Site { font: 300 16px/1.2 "Proxima Nova", sans-serif; letter-spacing: 1px; color: #111; background: #fff; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100% }
+			.Site-body { min-height: 100% }
+			.Site-container { width: 90%; max-width: 1600px; margin: 0 auto }
+			@media(min-width:300px) {
+				.Site-container { width: calc(100% - 14vw) }
+			}
+			@media(min-width:800px) {
+				.Site-container { width: calc(100% - 200px) }
+			}
+			@media(min-width:1200px) {
+				.Site-container { width: calc(100% - 320px) }
+			}
+			@media(min-width:1600px) {
+				.Site-container { width: calc(100% - 400px) }
+			}
+			.Site-container--narrow { max-width: 800px }
+			.Type { line-height: 1.65; font-size: 1em }
+			@media(min-width:1200px) {
+				.Type { font-size: 1.2em }
+			}
+			.Type--large { font-size: 1.2em }
+			@media(min-width:600px) {
+				.Type--large { font-size: 1.5em }
+			}
+			@media(min-width:800px) {
+				.Type--large { font-size: 1.75em }
+			}
+			@media(min-width:1200px) {
+				.Type--large { font-size: 2em }
+			}
+			.Type>:first-child { margin-top: 0 !important }
+			.Type>:last-child { margin-bottom: 0 !important }
+			.Type-h1, .Type-h2, .Type-h3, .Type img, .Type video, .Type iframe, .Type blockquote, .Type p, .Type pre, .Type ul, .Type ol, .Type hr, .Type h1, .Type h2, .Type h3 { max-width: 100%; height: auto; margin: 30px 0; display: block }
+			.Type a { outline: 0; border-bottom: 1px dotted currentColor }
+			.Type a:hover, .Type a:focus, .Type a:active { color: #000; border-bottom-style: solid }
+			.Type a:active, .Type a[href^=http]:visited { color: #999 }
+			.Type-h1, .Type-h2, .Type-h3, .Type h1, .Type h2, .Type h3 { line-height: 1.2 }
+			.Type-h1:not(:first-child), .Type-h2:not(:first-child), .Type-h3:not(:first-child), .Type h1:not(:first-child), .Type h2:not(:first-child), .Type h3:not(:first-child) { padding-top: 20px }
+			.Type-h1, .Type h1 { font-size: 2em }
+			.Type-h2, .Type h2 { font-size: 1.8em }
+			.Type-h3, .Type h3 { font-size: 1.5em }
+			.Type ol, .Type ul { padding-left: 2em; list-style: disc }
+			.Type ol { list-style: decimal }
+			.Type ul ul, .Type ol ol, .Type ul ol, .Type ol ul { margin-bottom: 0 }
+			.Type hr { height: 1px; border: 0; width: 100%; background: #eee; margin: 60px auto; -webkit-transform: rotate(-1deg); transform: rotate(-1deg); -webkit-transform-origin: top center; transform-origin: top center }
+			.Type blockquote { font-style: italic; font-size: 1.2em; margin: 0 }
+			.u-textNormal { font-weight: 300 }
+			.u-textBold { font-weight: 800 }
+			.u-textTruncate { max-width: 100%; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important }
+			@media(max-width:600px) {
+				.u-hideSmall { display: none }
+			}
+			.no-js .u-noJsHide { display: none }
+			@media print {
+				* { background: none; -webkit-box-shadow: none; box-shadow: none; text-shadow: none }
+				.Section { padding-top: 44px }
+				.Head-logo { text-decoration: none !important }
+			}
+		</style>
+		
+		<title>Fillipe Amorim - Front-end &am; WordPress web developer in Santana de Parnaíba</title>
+		<meta name="description" content="I'm an experienced front-end & WordPress web developer. Currently freelancing and might be available for new projects.">
+		
+		<meta property="og:title" content="Fillipe Amorim">
+		<meta property="og:description" content="Freelancing front-end & WordPress web developer in Santana de Parnaíba, São Paulo.">
+		<meta property="og:url" content="http://fillipeamorim.com">
+		<meta property="og:site_name" content="Fillipe Amorim">
+		<meta property="og:locale" content="pt_BR">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="http://fillipeamorim.com/assets/images/share.jpg">
+		
+		<link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+		<link href="favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+		<link href="favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+		<link href="manifest.json" rel="manifest">
+		<link href="safari-pinned-tab.svg" rel="mask-icon" color="#757575">
+		<meta name="theme-color" content="#ffffff">
+
+	</head>
+
+	<body class="Site-body">
+		
+		<header class="Head" role="banner">
+			<div class="Site-container">
+				<a class="Head-logo" href="http://fillipeamorim.com"><h1 class="Head-logoTitle">Fillipe Amorim</h1></a>
+				<a class="Head-navLink Link" href="#contact" title="Get in touch"><span class="Link-inner">Get in touch</span></a>
+			</div>
+		</header>
+
+		<main class="Site-main" id="content" role="main">
+			<section class="Section">
+				<div class="Site-container Site-container--narrow">
+					<div class="Type Type--large">
+						<p>I'm Fillipe Amorim, a freelancing <strong class="u-textNormal">WordPress and Front-end developer</strong> based in Santana de Parnaíba, São Paulo.</p>
+						<p>The work I do ranges from front-end programming to WordPress theme developing, pre-built theme editing, security and performance optimizations.<br>I love building well engineered, high performing websites with appealing designs. My main focus is WordPress Security, Performance and Editing but I also have experience with, PHP, MySQL, Photoshop, E-mail Marketing and a whole lot of other web technologies.</p>
+						<p></p>
+						<p>Available for new projects, <a class="js-contactLink" href="#contact" title="Get In Touch!">get in touch</a>!</p>
+					</div>
+					<div class="Type">
+						<br class="u-hideSmall">
+						<p><span class="u-textBold">Experience:</span> Currently freelancing, previously WordPress and Front-end webdeveloper at <a href="http://m42.digital" title="Go to M42" target="_blank">M42</a> and before that Full-Stack webdeveloper at <a href="http://max2digital.com.br" title="Go to Max2Digital" target="_blank">Max2Digital</a> and before that Full-Stack webdeveloper at <a href="http://www.sour.com.br" title="Go to Sour" target="_blank">Sour Comunicação</a>.</p>
+						<p><span class="u-textBold">Worked with brands:</span> Itaú, Visa, Honda and lots more.</p>
+						<p><span class="u-textBold">Specialties:</span> Front-end, WordPress, Security and Performance</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="Foot" role="footer" id="contact">
+			<div class="Site-container">
+				<div class="Foot-inner">
+					<div class="Foot-section">
+						<p>E-mail: <a class="Link js-contact" href="mailto:911@fillipeamorim.com" title="Send me an e-mail" target="_blank"><span class="Link-inner u-textBold">911@fillipeamorim.com</span></a></p>
+						<p>LinkedIn: <a class="Link js-contact" href="https://linkedin.com/in/fillipeamorim" title="Visit my LinkedIn Profile" target="_blank"><span class="Link-inner u-textBold">linkedin.com/in/fillipeamorim</span></a></p>
+						<p>Twitter: <a class="Link js-contact" href="https://twitter.com/bonjourfa" title="Tweet-me" target="_blank"><span class="Link-inner u-textBold">@bonjourfa</span></a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+	
+</html>
