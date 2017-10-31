@@ -105,7 +105,7 @@
 			@media(min-width:1600px) {
 				.Section--about { padding-top: 100px }
 			}
-			.Site { font: 300 16px/1.2 "Avenir Next", sans-serif; letter-spacing: 1px; color: #111; background: #fff; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100% }
+			.Site { font: 300 16px/1.2 "Roboto", sans-serif; letter-spacing: 1px; color: #111; background: #fff; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100% }
 			.Site-body { min-height: 100% }
 			.Site-container { width: 90%; max-width: 1600px; margin: 0 auto }
 			@media(min-width:300px) {
@@ -140,7 +140,6 @@
 			.Type-h1, .Type-h2, .Type-h3, .Type img, .Type video, .Type iframe, .Type blockquote, .Type p, .Type pre, .Type ul, .Type ol, .Type hr, .Type h1, .Type h2, .Type h3 { max-width: 100%; height: auto; margin: 30px 0; display: block }
 			.Type a { outline: 0; border-bottom: 1px dotted currentColor }
 			.Type a:hover, .Type a:focus, .Type a:active { color: #000; border-bottom-style: solid }
-			.Type a:active, .Type a[href^=http]:visited { color: #999 }
 			.Type-h1, .Type-h2, .Type-h3, .Type h1, .Type h2, .Type h3 { line-height: 1.2 }
 			.Type-h1:not(:first-child), .Type-h2:not(:first-child), .Type-h3:not(:first-child), .Type h1:not(:first-child), .Type h2:not(:first-child), .Type h3:not(:first-child) { padding-top: 20px }
 			.Type-h1, .Type h1 { font-size: 2em }
@@ -235,14 +234,19 @@
 			</div>
 		</footer>
 	
-		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-		<script>
-		 WebFont.load({
-		    google: {
-		      families: ['Avenir Next']
-		    }
-		 	});
-		</script>
+		<script type="text/javascript">
+		  WebFontConfig = {
+		    google: { families: [ 'Roboto:300,500:latin' ] }
+		  };
+		  (function() {
+		    var wf = document.createElement('script');
+		    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		      '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+		    wf.type = 'text/javascript';
+		    wf.async = 'true';
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(wf, s);
+		  })(); </script>
 		
 	</body>
 	
