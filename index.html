@@ -105,7 +105,7 @@
 			@media(min-width:1600px) {
 				.Section--about { padding-top: 100px }
 			}
-			.Site { font: 300 16px/1.2 "Proxima Nova", sans-serif; letter-spacing: 1px; color: #111; background: #fff; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100% }
+			.Site { font: 300 16px/1.2 "Avenir Next", sans-serif; letter-spacing: 1px; color: #111; background: #fff; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100% }
 			.Site-body { min-height: 100% }
 			.Site-container { width: 90%; max-width: 1600px; margin: 0 auto }
 			@media(min-width:300px) {
@@ -151,8 +151,8 @@
 			.Type ul ul, .Type ol ol, .Type ul ol, .Type ol ul { margin-bottom: 0 }
 			.Type hr { height: 1px; border: 0; width: 100%; background: #eee; margin: 60px auto; -webkit-transform: rotate(-1deg); transform: rotate(-1deg); -webkit-transform-origin: top center; transform-origin: top center }
 			.Type blockquote { font-style: italic; font-size: 1.2em; margin: 0 }
-			.u-textNormal { font-weight: 300 }
-			.u-textBold { font-weight: 800 }
+			.u-textNormal { font-weight: 100 }
+			.u-textBold { font-weight: 500 }
 			.u-textTruncate { max-width: 100%; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important }
 			@media(max-width:600px) {
 				.u-hideSmall { display: none }
@@ -184,11 +184,14 @@
 		<meta name="theme-color" content="#ffffff">
 		
 		<script>
-		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		
 		ga('create', 'UA-109033697-1', 'auto');
 		ga('send', 'pageview');
 		</script>
-		<script async src='https://www.google-analytics.com/analytics.js'></script>
 		
 	</head>
 
@@ -205,7 +208,7 @@
 			<section class="Section">
 				<div class="Site-container Site-container--narrow">
 					<div class="Type Type--large">
-						<p>I'm Fillipe Amorim, a freelancing <strong class="u-textNormal">WordPress and Front-end developer</strong> based in Santana de Parnaíba, São Paulo.</p>
+						<p>I'm Fillipe Amorim, a freelancing <strong class="u-textBold">WordPress and Front-end developer</strong> based in Santana de Parnaíba, São Paulo.</p>
 						<p>The work I do ranges from front-end programming to WordPress theme developing, pre-built theme editing, security and performance optimizations.<br>I love building well engineered, high performing websites with appealing designs. My main focus is WordPress Security, Performance and Editing but I also have experience with, PHP, MySQL, Photoshop, E-mail Marketing and a whole lot of other web technologies.</p>
 						<p></p>
 						<p>Available for new projects, <a class="js-contactLink" href="#contact" title="Get In Touch!">get in touch</a>!</p>
@@ -223,10 +226,10 @@
 		<footer class="Foot" role="footer" id="contact">
 			<div class="Site-container">
 				<div class="Foot-inner">
-					<div class="Foot-section">
-						<p>E-mail: <a class="Link js-contact" href="mailto:911@fillipeamorim.com" title="Send me an e-mail" target="_blank"><span class="Link-inner u-textBold">911@fillipeamorim.com</span></a></p>
-						<p>LinkedIn: <a class="Link js-contact" href="https://linkedin.com/in/fillipeamorim" title="Visit my LinkedIn Profile" target="_blank"><span class="Link-inner u-textBold">linkedin.com/in/fillipeamorim</span></a></p>
-						<p>Twitter: <a class="Link js-contact" href="https://twitter.com/bonjourfa" title="Tweet-me" target="_blank"><span class="Link-inner u-textBold">@bonjourfa</span></a></p>
+					<div class="Foot-section u-textBold">
+						<p>E-mail: <a class="Link js-contact" href="mailto:911@fillipeamorim.com" title="Send me an e-mail" target="_blank"><span class="Link-inner u-textNormal">911@fillipeamorim.com</span></a></p>
+						<p>LinkedIn: <a class="Link js-contact" href="https://linkedin.com/in/fillipeamorim" title="Visit my LinkedIn Profile" target="_blank"><span class="Link-inner u-textNormal">linkedin.com/in/fillipeamorim</span></a></p>
+						<p>Twitter: <a class="Link js-contact" href="https://twitter.com/bonjourfa" title="Tweet-me" target="_blank"><span class="Link-inner u-textNormal">@bonjourfa</span></a></p>
 					</div>
 				</div>
 			</div>
@@ -236,7 +239,7 @@
 		<script>
 		 WebFont.load({
 		    google: {
-		      families: ['Proxima Nova']
+		      families: ['Avenir Next']
 		    }
 		 	});
 		</script>
