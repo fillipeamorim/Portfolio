@@ -1,1 +1,11 @@
-{}
+{
+  "version": 2,
+  "alias": ["www.fillipeamorim.com"],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": { "Location": "https://fillipeamorim.com/$1" }
+    }
+  ]
+}
