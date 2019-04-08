@@ -1,11 +1,4 @@
 {
   "version": 2,
-  "alias": ["fillipeamorim.com"],
-  // "routes": [
-  //   {
-  //     "src": "/(.*)",
-  //     "status": 301,
-  //     "headers": { "Location": "https://fillipeamorim.com/$1" }
-  //   }
-  // ]
+  "alias": ["fillipeamorim.com"]
 }
